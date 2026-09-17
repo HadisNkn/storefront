@@ -7,7 +7,7 @@ def say_hello(request):
     return HttpResponse('Hello World')
 
 def say_hello_2(request):
-    return render(request, 'hello.html')
+    return render(request, 'hello.html', {'name': 'Hadis'})
 
 
 
